@@ -1,0 +1,37 @@
+Well, there is no fastest sorting algorithm.
+
+Each sorting algorithm can be fastest for certain scenarios. There are many types of sorting algorithm present with time complexities O(N²), O(N*logN) and even O(N). Then why isn't the algorithm with O(N) time complexitiy the fastest?
+
+Let me break down the scenarios where each algorithm would be best.
+
+Bubble Sort -
+
+This algorithm is almost never used because of its O(N²) time complexitiy. But in computer graphics, it is popular to detect a very small error (like swap of two elements) in almost sorted array.
+
+Selection Sort -
+
+This algorithm is used when the input array's length is around 10 - 20. Usually, insertion sort is preferred over selection sort. But selection sort takes less write than insertion sort. That's why sometimes, selection sort is preferred over insertion sort.
+
+Insertion Sort -
+
+This algorithm is used when the input array's length is around 10 - 20. This algorithm is mostly preferred because its an adaptive algorithm i.e it improves its time complexitiy from O(N²) to even O(N*logN) by taking advantage of a sorted subarray if its present in the input array.
+
+Quicksort -
+
+This algorithm is used when the input array's length is very very high. This is a recursive algorithm with time complexity O(N*logN). This is usually preferred over mergesort. But we should select the pivot element properly. If we take the wrong pivot element, its time complexitiy can reach O(N²).
+
+Mergesort -
+
+This algorithm is used when the input array's length is very very high and it is usually used to sort linked list. Its time complexitiy is O(N*logN). But quicksort is preferred over mergesort. Because mergesort has O(N) extra space complexity where quicksort's space complexity is O(1).
+
+Counting Sort -
+
+The time complexity is O(N + k) where k is the largest integer present in the input array. This algorithm is only used when the input array's length is very very high and the largest element (k) present in the array is smaller than the length of array (N). For example, sort an array of length around a billion containing age of people. Here k can be maximum around 150 and length of the input array is 10 crore.
+
+Thus, each algorithm is fastest in certain situations.
+
+***********************
+
+
+FYI : I've answered assuming you are familiar with these algorithms. The time complexities I've mentioned are average case time complexities.
+ 

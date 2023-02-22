@@ -1,0 +1,72 @@
+Introduce yourself
+Explain your FYP
+
+OOP:
+What do you know about Polymorphism?
+How much you have knowledge about OOP and DSA concepts.
+
+DSA:
+Why we need data structures?
+Which is the fastet sorting algorithm, you know? Merge sort and QuickSort which is best?
+There is a linkedlist consist of nodes. 
+struct Node{
+	int data;
+	Node * next;
+	Node * bottom;
+}
+Each node has 2 pointers, next pointer and bottom pointer.
+You are given a head of the linked list, you need to find the sum of data of all the nodes.
+e.g:
+1->1->1->1
+   |
+   1->1->1->1
+     	 |
+ 	 1->1->1->1->-1
+	 |
+	 1->1
+         |
+	 1
+	 |
+	 1->1->1
+	    |
+            1
+
+Product of Array except itself
+write a function f(A*, B*, size) which receive two arrays and size of array,
+you need to populate the Array A in B in such a way that, B element contain the product of all the elements of A exluding ith element itself.
+Time complexity = bigO(N)
+if A = {1,3,2,5}, then B = {30, 10, 15, 6} 
+
+Analytical:
+You are given a cake, you need to divide the cake into 8 pieces into 3 attempts. How you will do this?
+Two trains are moving towards each other with a speed of 80KM/h. 
+There is a distance of 180km between them. There is a bird on the front side of first train 
+which move towards second train and return back
+when the bird reached the front of the second train. The bird speed is 70km/h. 
+What will be the total distance covered by the bird when both trains will collide.
+
+Database:
+What is Indexing? Why we use indexing? Types of indexing?
+Cluster vs non cluster indexing?
+He gave me example of 3 list of index and ask me how index will map for these list.
+What is use of group function in DB, why we need group explain group with example?
+Explain all the joins, inner join, outer join, left outer join, right outer join with the examples. 
+What is stored procedure?
+What is transaction, what are the benefit to use transactions in database. Transaction Rules.
+What is normalization. 
+ERD:
+You have a social media application. In which user can add posts.
+Now, you need to add a feature of comment on the post. Multiple users can write comment on multiple posts. 
+How you add this functionality. 
+Now, also add the feature of reply, where multiple user can write multiple reply in post of multiple users.
+
+Draw an ERD for quiz management, Each quiz contain quiz name, quiz start time, quiz totat time, and list of questions and student answer.
+Question is a MCQs based, Question has statement and 4 options and 1 answer.
+Each quiz can contain multiple questions, and each question can be used in multiple quizzez.
+Student can attempt the quiz and write answer for each question of quiz.
+Write a query which display the quiz name, all the question statement of the quiz and student answer.
+
+# Source: Ahsan Riaz
+
+
+  

@@ -1,0 +1,36 @@
+●	Analytical:
+○	An airplane flies from Islamabad to Karachi in 90 mins but flies back from Karachi to Islamabad in 1 hour 30 minutes. Why?
+○	There's a room with dimensions X * Y. You're given tiles of N*N. Maximize N such that the tiles completely cover the room.
+○	The longest distance you can travel when you have 3 motor bike tires that wear out after 30 km ?
+
+●	Analytical / Programming:
+○	A building has 100 floors. You have 2 similar mobiles. How would you find the maximum floor from which dropping the phone would not break it? 
+(Optimize time and you can waste both phones)
+○	You have two ropes. They each take one hour to burn. How would you know when 45 minutes have passed? They don’t burn sequentially, i.e., 
+you can’t keep track of how much of the rope has burnt (10%, 25%,...)
+○	You have a balance and eight balls which are of same size and have exactly same appearance. 
+	1 out of eight balls has more weight than rest of the seven individual balls. 
+	You have to find the ball which weighs more by using balance as minimum times as possible.
+○	Give a logical proof that if two consecutive numbers have a difference of two (eg 17 and 19), the number in the middle (eg 18) is a multiple of 6.
+
+●	Analytical:
+○	You have two ropes. They burn in 30 minutes each. I want to know when 45 minutes pass.
+○	You have 8 balls. 7 of them are 8g each. One ball is 10g. You have a manual balance (scale). How would you efficiently find the heavier ball?
+○	There is an elephant that needs to go 1000 km across, it can only carry 1000 items at one time. You have total 3000 Items how much will you be able to transport if elephant consumes 1 item on 1 km.
+
+●	Analytical
+○	A beast takes away your half of your food item and return you 1. How much do you require to have 2 items at end after meeting beast for 5 times.
+ 
+○	Same beast take away half of the items now and return nothing. Give a generic formula to this ? For nth encounter
+○	Top horse among 25 horses problem
+○	8 balls weight problem
+○	Two people dropped on a plane. A doesn’t know where B is and B doesn’t know where A is. They can move left or right only. How can A find B? Hint: Move left 1 step then move right 2 steps then left 3 steps then right 4 steps until B who is standing still is found.
+●	Analytical:
+○	There are two rope bridges spanning a river. 4 people need to cross it. The 4 people cross the river in 1, 3, 7, 10 mins. Only one person can be on a bridge at any given time. Minimum time to cross?
+●	Analytical
+○	You’re given 1 3L jug and 5L jug, how will you get 4L of water from pond using the 2?
+○	What day of the week will it be 100 days from now? (Write a general formula)
+Analytical Questions
+●	You are present in a basement that has three electric buttons for three bulbs present on ground floor.
+For all three electric buttons you have to identify which electric button is associated to which bulb by only going to the ground floor once.
+ (Hint: Concept of Energy/Heat)

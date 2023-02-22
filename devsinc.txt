@@ -1,0 +1,13 @@
+Last year, these problems were asked in the Devsinc interview.
+
+Find the maximum sum of the subarray.
+
+You are given a list of strings, you need to display the string with 3rd max length.
+
+Convert the infix to postfix expression.
+
+You have given an array, you need to move all the negative values on the right side of the array.
+
+Display all the primes below 1000.
+
+Find the sum of the first 4th smallest element in the array.

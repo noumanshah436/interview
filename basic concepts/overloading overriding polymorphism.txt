@@ -1,0 +1,25 @@
+Overloading is when you have the same function name that takes different parameters.
+
+Overriding is when a child class replaces a parent's method with one of its own (this in iteself does not constitute polymorphism).
+
+Polymorphism is late binding, e.g. the base class (parent) methods are being called but not until runtime does the application know what the actual object is - it may be a child class whose methods are different. This is because any child class can be used where a base class is defined.
+
+In Java you see polymorphism a lot with the collections library:
+
+int countStuff(List stuff) {
+  return stuff.size();
+}
+List is the base class, the compiler has no clue if you're counting a linked list, vector, array, or a custom list implementation, as long as it acts like a List:
+
+List myStuff = new MyTotallyAwesomeList();
+int result = countStuff(myStuff);
+If you were overloading you'd have:
+
+int countStuff(LinkedList stuff) {...}
+int countStuff(ArrayList stuff) {...}
+int countStuff(MyTotallyAwesomeList stuff) {...}
+etc...
+and the correct version of countStuff() would be picked by the compiler to match the parameters.
+
+Share
+Follow
