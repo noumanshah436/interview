@@ -1,0 +1,137 @@
+//  https://webrewrite.com/find-pairs-given-sum-sorted-array-java-code/
+// https://www.youtube.com/watch?v=8c-GO7gWXrs
+/*
+
+Find pairs with given sum in a sorted array.
+
+Given an array A of size N. Write a code to find all pairs in the array that sum to a number equal to K.
+ If no such pair exists then output will be –1.
+
+NOTE – The array elements are distinct and in a sorted order.
+
+For example –
+
+Input :
+
+arr[] = {1, 2, 3, 4, 5, 6, 7};
+sum = 9
+
+Output:
+
+Pairs with given sum 9 is
+
+Pair (2 , 7 )
+Pair (3 , 6 )
+Pair (4 , 5 )
+
+
+Find Pairs with Given Sum in a Sorted Array
+
+*/  *******************************
+
+  low = 0
+  high = length - 1;
+  
+  while(low < high) { 
+        
+      if(  arr[low] + arr[high] > sum) {
+           high--; 
+      } 
+      else if (arr[low] + arr[high] < sum) {
+           low++;
+ 
+      } 
+      else if (arr[low] + arr[high] == sum) {
+ 
+          print value of arr[low] and arr[high]
+          low++;
+          high--;
+      }
+} 
+
+
+******************************************
+
+using simple array:
+
+
+#include <iostream>
+
+void findPairsWithGivenSum(int arr[], int size, int sum) {
+    int low = 0;
+    int high = size - 1;
+    bool found = false;
+
+    while (low < high) {
+        int currentSum = arr[low] + arr[high];
+        
+        if (currentSum > sum) {
+            high--;
+        } else if (currentSum < sum) {
+            low++;
+        } else {
+            std::cout << "Pair (" << arr[low] << " , " << arr[high] << ")\n";
+            found = true;
+            low++;
+            high--;
+        }
+    }
+
+    if (!found) {
+        std::cout << "-1\n";
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5, 6, 7};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int sum = 9;
+
+    std::cout << "Pairs with given sum " << sum << " are:\n";
+    findPairsWithGivenSum(arr, size, sum);
+
+    return 0;
+}
+
+
+*******************************
+
+using vector:
+
+
+#include <iostream>
+#include <vector>
+
+void findPairsWithGivenSum(const std::vector<int>& arr, int sum) {
+    int low = 0;
+    int high = arr.size() - 1;
+    bool found = false;
+
+    while (low < high) {
+        int currentSum = arr[low] + arr[high];
+        if (currentSum > sum) {
+            high--;
+        } else if (currentSum < sum) {
+            low++;
+        } else {
+            std::cout << "Pair (" << arr[low] << " , " << arr[high] << ")\n";
+            found = true;
+            low++;
+            high--;
+        }
+    }
+
+    if (!found) {
+        std::cout << "-1\n";
+    }
+}
+
+int main() {
+    std::vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
+    int sum = 9;
+
+    std::cout << "Pairs with given sum " << sum << " are:\n";
+    findPairsWithGivenSum(arr, sum);
+
+    return 0;
+}

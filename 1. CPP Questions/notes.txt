@@ -1,0 +1,5 @@
+
+
+run cpp file:
+
+g++ main.cpp && ./a.out && rm a.out
