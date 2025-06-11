@@ -1,7 +1,7 @@
 #include <iostream> 
 using namespace std;
 
-//  Print zeroes at the end of array without counting zeros
+//  put zeroes at the end of array without counting zeros
 
 void putZeroesAtEnd(int arr[], int size) {
 	int end_ptr = size - 1;
@@ -23,6 +23,7 @@ void putZeroesAtEnd(int arr[], int size) {
 			end_ptr--;
 		else i++;
 	}
+	
 	for (int j = 0; j < size; j++)
 	{
 		cout << arr[j] << " ";

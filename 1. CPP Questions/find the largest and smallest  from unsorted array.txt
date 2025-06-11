@@ -1,6 +1,6 @@
 public static void largestAndSmallest(int[] numbers) 
 {
-	 int largest = numbers[0]; 
+	int largest = numbers[0]; 
 	int smallest = numbers[0]; 
 
 	for (int number : numbers) 
@@ -11,8 +11,8 @@ public static void largestAndSmallest(int[] numbers)
     } 
 
 System.out.println("Given integer array : " + Arrays.toString(numbers));
- System.out.println("Largest number in array is : " + largest);
- System.out.println("Smallest number in array is : " + smallest);
+System.out.println("Largest number in array is : " + largest);
+System.out.println("Smallest number in array is : " + smallest);
 
  }
  
