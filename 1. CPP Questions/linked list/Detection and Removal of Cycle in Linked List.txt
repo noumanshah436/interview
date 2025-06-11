@@ -58,7 +58,7 @@ void removeCycle(node* head){
     }
 
     fast=head ;                    //  after meet slow=fast , we point fast to head and again iterating both pointer by 1 and when they become same this means here is the cycle start, so we point slow pointer to null                                           
-    while(fast->next  != s low->next){            
+    while(fast->next  != slow->next){            
         fast=fast->next ;
         slow=slow->next ;
     }
